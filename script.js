@@ -2,6 +2,20 @@ const character = "#";
 const count = 8;
 const rows = [];
 
-for("iterator"; "condition"; "iteration") {
-
+function padRow(name) {
+    const test = "Testing";
+    return character + name;
 }
+console.log(test);
+const call = padRow("Edmyr");
+console.log(call);
+
+for(let i = 0; i < count; i = i + 1) {
+    rows.push(character.repeat(i + 1));
+}
+
+let result = "";
+for(const row of rows) {
+result = result + "\n" + row;
+}
+console.log(result);
